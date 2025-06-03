@@ -1,1 +1,9 @@
-const allButtons = document.querySelectorAll('button');
+document.addEventListener('DOMContentLoaded', function() {
+    const button1 = document.getElementById('Work_Button');
+    const button2 = document.getElementById('Rest_Button');
+    const button3 = document.getElementById('Fun_Button');
+});
+
+function Fall(button1, button2, button3) {
+
+}

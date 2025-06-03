@@ -40,24 +40,18 @@
     transform: scale(1.07);
  }
 
- .footer {
+ .footer { /* if anythin justi nsert heigh ;;; ja nesanaak leave it at 300px*/
      position: fixed;
      bottom: 0;
      width: 100%;
-     height: 25%;
      left: 0;
      right: 0;
      background-color: #4caf50;
  }
 
  .Prakse {
-     position: relative;
-     left: 0;
-     right: 0;
-     bottom: 40px;
-     margin-left: auto;
-     margin-right: auto;
-     width: fit-content; /* or set a specific width */
+     display: flex;
+     justify-content: center;
      color: #2d6b2f;
      font-size: 150px;
      font-weight: bold;

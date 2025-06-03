@@ -56,3 +56,16 @@
      font-size: 150px;
      font-weight: bold;
  }
+
+ .fall {
+     animation: falling 2s ease-in forwards;
+ }
+
+ @keyframes falling {
+     0% {
+         transform: translateY(0) rotate(0deg);
+     }
+     100% {
+         transform: translateY(calc(100vh + 100px)) rotate(360deg);
+     }
+ }

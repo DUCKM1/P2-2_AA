@@ -3,13 +3,13 @@
 let pages = {
     'Web Akinators': [
         {name: 'Gribi strādāt?', page: 'Kādas darbības plāno veikt?'}, //buttons be  name => which page to
-        {name: 'Gribi atpūsties?', page: 'rest'},
-        {name: 'Gribi izklaidēties?', page: 'fun'}
+        {name: 'Gribi atpūsties?', page: 'Ko darīsi?'},
+        {name: 'Gribi izklaidēties?', page: 'Ko spēlēsi?'}
     ],
     'Kādas darbības plāno veikt?': [
-        {name: 'Gramatika', page: 'fun'},
-        {name: 'Kods', page: 'fun'},
-        {name: 'Plānošana', page: 'fun'},
+        {name: 'Gramatika', page: 'Izvēlies ko tieši tu gribi?'},
+        {name: 'Kods', page: 'Kurā valodā programmēsi?'},
+        {name: 'Plānošana', page: 'Kādus plānošanas veidus tu meklē?'},
         {name: 'Tabulas', page: 'Kādas tabulas veidus plāno taisīt?'},
         {name: 'Dokumenti', page: 'Kādus dokumentus plāno taisīt?'}
     ],
@@ -21,21 +21,140 @@ let pages = {
         {name: 'Prezentācijas', page: 'Prezentāciju saite'},
         {name: 'Darba Dokumentus', page: 'Dokumentu saite'}
     ],
+    'Atskaišu saite': [
+        {name: 'Piktochart', link: 'https://piktochart.com/'}
+    ],
+    'Prezentāciju saite': [
+        {name: 'Google Slides', link: 'https://docs.google.com/presentation'}
+    ],
+    'Dokumentu saite': [
+        {name: 'Google Docs', link: 'https://docs.google.com/document/u/0/'}
+    ],
+
+
 
     'Kādas tabulas veidus plāno taisīt?': [
         {name: 'Datu tabulas', page: 'Datu tabulu saite'},
         {name: 'Datu analīzi', page: 'Datu analīzes saite'},
         {name: 'Datu Vizualizāciju', page: 'Datu vizualizācijas saite'}
     ],
-    'Prezentāciju saite': [
-        {name: 'Google Slides', link: 'https://docs.google.com/presentation'}
+    'Datu tabulu saite': [
+        {name: 'Google Spreadsheet', link: 'https://docs.google.com/spreadsheets/u/0/?pli=1'}
     ],
-    'rest': [
-
+    'Datu analīzes saite': [
+        {name: 'Julius AI', link: 'https://julius.ai/'}
     ],
-    'fun': [
+    'Datu vizualizācijas saite': [
+        {name: 'Flourish.studio', link: 'https://flourish.studio/'}
+    ],
 
-    ]
+
+
+        //https://trello.com/
+    'Kādus plānošanas veidus tu meklē?':[
+        {name: 'Komandas', page: 'Komandas planošanas saite'},
+        {name: 'Solo darba plānošana', page: 'Solo darba plānošans saite'}
+    ],
+    'Komandas planošanas saite': [
+        {name: 'Trello.com', link: 'https://trello.com/'}
+    ],
+    'Solo darba plānošans saite': [
+        {name: 'To-do.office.com', link: 'https://to-do.office.com/tasks/'}
+    ],
+
+
+
+    'Kurā valodā programmēsi?': [
+        {name: 'C++', page: 'C++ saite'},
+        {name: 'Java', page: 'Java saite'},
+        {name: 'Python', page: 'Python saite'}
+    ],
+    'C++ saite': [
+        {name: 'Programiz C++', link: 'https://www.programiz.com/cpp-programming/online-compiler/'}
+    ],
+    'Java saite': [
+        {name: 'Programiz Java', link: 'https://www.programiz.com/java-programming/online-compiler/'}
+    ],
+    'Python saite': [
+        {name: 'Programiz Python', link: 'https://www.programiz.com/python-programming/online-compiler/'}
+    ],
+
+
+
+
+    'Izvēlies ko tieši tu gribi?': [
+        {name: 'Pārbaudīt sintaksi', page: 'Quill'},
+        {name: 'Pārbaudīt teikumus', page: 'Grammarly'}
+    ],
+    'Quill': [
+        {name: 'QuillBot', link: 'https://quillbot.com/blog/writing/english-grammar-resources/'}
+    ],
+    'Grammarly': [
+        {name: 'Grammarly', link: 'https://www.grammarly.com/'}
+    ],
+
+
+
+
+
+    'Ko darīsi?': [
+        {name: 'Klausīšos mūziku', page: 'Izvēlies kur klausīsies'},
+        {name: 'Skatīšos streamus', page: 'Kur skatīsies?'},
+        {name: 'Skatīšos vidakus', page: 'Kur skatīsies?'} //linked to 1 since 1 site can do both huinas
+    ],
+    'Izvēlies kur klausīsies':[
+        {name: 'Youtube music', page: 'YT music'},
+        {name: 'Spotify', page: 'Sptf'}
+    ],
+    'YT music': [
+        {name: 'YouTube Music', link: 'https://music.youtube.com/'}
+    ],
+    'Sptf': [
+        {name: 'Spotify', link: 'https://open.spotify.com/'}
+    ],
+
+
+
+    'Kur skatīsies?':[
+        {name: 'YouTube', page: 'YT'},
+        {name: 'Twitch', page: 'TW'},
+        {name: 'Kick', page: 'Kick'}
+    ],
+    'YT': [
+        {name: 'YouTube', link: 'https://www.youtube.com/'}
+    ],
+    'TW': [
+        {name: 'Twitch', link: 'https://www.twitch.tv/'}
+    ],
+    'Kick': [
+        {name: 'Kick', link: 'https://kick.com/'}
+    ],
+
+//https://www.chess.com/play/online
+    'Ko spēlēsi?': [
+        {name: 'Google snake', page: 'GS'},
+        {name: 'Agar.io', page: 'AG'},
+        {name: 'Snake.io', page: 'SK'},
+        {name: 'Šahu', page: 'CHS'},
+        {name: 'Kaut ko pats pameklēšu', page: 'PG'},
+    ],
+
+    'GS': [
+        {name: 'Google Snake', link: 'https://www.google.com/search?q=google+snake&oq=google+snake&gs_lcrp=EgZjaHJvbWUyDggAEEUYORhDGIAEGIoFMgcIARAAGIAEMgcIAhAAGIAEMgwIAxAAGBQYhwIYgAQyDAgEEAAYFBiHAhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDIyOTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8'}
+    ],
+    'AG': [
+        {name: 'Agar.io', link: 'https://agar.io/'}
+    ],
+    'SK': [
+        {name: 'Snake.io', link: 'https://snake.io/'}
+    ],
+    'CHS': [
+        {name: 'Chess.com', link: 'https://www.chess.com/play/online'}
+    ],
+    'PG': [
+        {name: 'Crazy Games', link: 'https://www.crazygames.com/'}
+    ],
+
 };
 
 // <button id="Work_Button" onClick="on_work_button()">Gribās strādāt?</button>

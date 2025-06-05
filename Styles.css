@@ -20,9 +20,16 @@ body {
 }
 
 #Link {
-
 }
+/*
+the # link is the link stiyling
+its not working beuh
+*/
 
+ a {
+     font-weight: bold;
+     font-size: 10vh;
+ }
 button {
     transition: transform 0.3s;
     background-color: #4caf50;

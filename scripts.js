@@ -27,9 +27,9 @@ let pages = {
         {name: 'Datu analīzi', page: 'Datu analīzes saite'},
         {name: 'Datu Vizualizāciju', page: 'Datu vizualizācijas saite'}
     ],
-
-
-
+    'Prezentāciju saite': [
+        {name: 'Google Slides', link: 'https://docs.google.com/presentation'}
+    ],
     'rest': [
 
     ],
@@ -56,24 +56,48 @@ function switch_page(page_name) {
         }
         buttons.innerHTML = ''; //deletes the previous buttons
 
-        const QuestionTitle = document.getElementById('question'); //h1 as variabale
-        QuestionTitle.textContent = page_name_from_button; //the h1 is now the set, next, title
+        if (page.length === 1) { // if page contains only 1 element means its the end page
 
-        for (let i = 0; i < page.length; i++ ) {
-            const button = document.createElement('button'); // button = button ahh variable
+            buttons.id = "Links"; // change the id so if vajag can do css
+            const link = page[0]; // since only 1 element can use [0] to get it
+
+            const LinkText = document.createElement('a'); // create <a> tag jeb the link
+            LinkText.textContent = link.name; // assign display text to the <a> tag
+            LinkText.href = link.link; // assign link to the <a> tag
 
 
 
-            button.class = 'button'; //links css to buttons so they look kumalala
-            // button.class links the class button.id links the css id, just have to make sure hists unique
+            buttons.appendChild(LinkText); // add the <a> tag to the buttons container
 
-            button.value = page[i].page;
-            button.textContent = page[i].name; //new button uzraksti
 
-            button.onclick = switch_page; // click button => wtich page
 
-            buttons.appendChild(button); //add the new button to the div
+
+        } else if (page.length > 1) { // if page contains more then 1 elements means its a question/button page
+
+            const QuestionTitle = document.getElementById('question'); //h1 as variabale
+            QuestionTitle.textContent = page_name_from_button; //the h1 is now the set, next, title
+
+            for (let i = 0; i < page.length; i++ ) {
+                const button = document.createElement('button'); // button = button ahh variable
+
+
+
+                button.class = 'button'; //links css to buttons so they look kumalala
+                // button.class links the class button.id links the css id, just have to make sure hists unique
+
+                button.value = page[i].page;
+                button.textContent = page[i].name; //new button uzraksti
+
+                button.onclick = switch_page; // click button => wtich page
+
+                buttons.appendChild(button); //add the new button to the div
+            }
+
+        } else { // error case where page content length < 1, jeb nekaa nav un visi apdrishas
+
         }
+
+
     } else { //called by code
         const page = pages[page_name]; //acceses buttons
 

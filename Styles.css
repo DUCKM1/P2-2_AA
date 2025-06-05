@@ -1,62 +1,66 @@
- body {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     /*
-     šis align items uz visu body, don't use it anywhere else or bus slikti
-      */
-     font-family: Calibri, serif
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    šis align items uz visu body, don't use it anywhere else or bus slikti
+     */
+    font-family: Calibri, serif
 }
 
 
- #Buttons {
-     display: flex;
-     flex-direction: column;
-     /*
-     align items - vertikāli
-     justify content - horizontali
-     flex direction - uz kuru pusi (rows/colums) f
-      */
- }
+#Buttons {
+    display: flex;
+    flex-direction: column;
+    /*
+    align items - vertikāli
+    justify content - horizontali
+    flex direction - uz kuru pusi (rows/colums) f
+     */
+}
 
- button {
-     transition: transform 0.3s;
-     background-color: #4caf50;
-     color: white;
-     padding: 3vh 15vh;
-     border: none;
-     margin: 1vh;
-     border-radius: 6px;
-     cursor: pointer;
-     font-weight: bold;
-     font-size: 3vh;
- }
+#Link {
 
- button:active {
-     background-color: #2d6b2f;
- }
+}
 
- button:hover {
+button {
+    transition: transform 0.3s;
+    background-color: #4caf50;
+    color: white;
+    padding: 3vh 15vh;
+    border: none;
+    margin: 1vh;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+button:active {
+    background-color: #2d6b2f;
+}
+
+button:hover {
     transform: scale(1.07);
- }
+}
 
- .footer { /* if anythin justi nsert heigh ;;; ja nesanaak leave it at 300px*/
-     position: absolute;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     bottom: 0;
-     width: 100%;
-     height: 30vh;
-     left: 0;
-     right: 0;
-     background-color: #4caf50;
- }
+.footer { /* if anythin justi nsert heigh ;;; ja nesanaak leave it at 300px*/
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    left: 0;
+    right: 0;
+    background-color: #4caf50;
+}
 
- .Prakse {
-     color: #2d6b2f;
-     font-size: 15vh;
-     font-weight: bold;
-     margin: 0;
- }
+.Prakse {
+    color: #2d6b2f;
+    font-size: 15vh;
+    font-weight: bold;
+    margin: 0;
+}
 

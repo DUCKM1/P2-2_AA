@@ -10,9 +10,26 @@ let pages = {
         {name: 'Gramatika', page: 'fun'},
         {name: 'Kods', page: 'fun'},
         {name: 'Plānošana', page: 'fun'},
-        {name: 'Tabulas', page: 'fun'},
-        {name: 'Dokumenti', page: 'fun'}
+        {name: 'Tabulas', page: 'Kādas tabulas veidus plāno taisīt?'},
+        {name: 'Dokumenti', page: 'Kādus dokumentus plāno taisīt?'}
     ],
+
+
+
+    'Kādus dokumentus plāno taisīt?': [
+        {name: 'Atskaites', page: 'Atskaišu saite'},
+        {name: 'Prezentācijas', page: 'Prezentāciju saite'},
+        {name: 'Darba Dokumentus', page: 'Dokumentu saite'}
+    ],
+
+    'Kādas tabulas veidus plāno taisīt?': [
+        {name: 'Datu tabulas', page: 'Datu tabulu saite'},
+        {name: 'Datu analīzi', page: 'Datu analīzes saite'},
+        {name: 'Datu Vizualizāciju', page: 'Datu vizualizācijas saite'}
+    ],
+
+
+
     'rest': [
 
     ],

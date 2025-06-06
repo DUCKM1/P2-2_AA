@@ -168,7 +168,7 @@ function switch_page(page_name) {
 
     if (this.value) {  //clicked
         const page_name_from_button = this.value; //read this.val
-        const page = pages[page_name_from_button]; //check the value in pages, where does it "click"
+        const page = pages[page_name_from_button]; //check the value in pages (arr), where does it "click"
 
         if (!page) { //if page doesn't exist, apdirsies
             return;
@@ -178,11 +178,11 @@ function switch_page(page_name) {
         if (page.length === 1) { // if page contains only 1 element means its the end page
 
             buttons.id = "Links"; // change the id so if vajag can do css
-            const link = page[0]; // since only 1 element can use [0] to get it
+            const link = page[0]; // saņem vienu to pages arr elementu un saves it as variable link
 
-            const LinkText = document.createElement('a'); // create <a> tag jeb the link
-            LinkText.textContent = link.name; // assign display text to the <a> tag
-            LinkText.href = link.link; // assign link to the <a> tag
+            const LinkText = document.createElement('a'); // create <a> tag jeb the link tag
+            LinkText.textContent = link.name; // displayed text ir saistiits ar a tag. rupji a = BB texts iz linka bus BB
+            LinkText.href = link.link; // assigned a link to tag a
 
 
 
@@ -196,16 +196,16 @@ function switch_page(page_name) {
             const QuestionTitle = document.getElementById('question'); //h1 as variabale
             QuestionTitle.textContent = page_name_from_button; //the h1 is now the set, next, title
 
-            for (let i = 0; i < page.length; i++ ) {
+            for (let i = 0; i < page.length; i++ ) { //goes through the paeggsh
                 const button = document.createElement('button'); // button = button ahh variable
-
+                //each iteration adds a button
 
 
                 button.class = 'button'; //links css to buttons so they look kumalala
                 // button.class links the class button.id links the css id, just have to make sure hists unique
 
-                button.value = page[i].page;
-                button.textContent = page[i].name; //new button uzraksti
+                button.value = page[i].page; //variable for swtich page, hands it to the pages
+                button.textContent = page[i].name; //new button uzraksti from pages
 
                 button.onclick = switch_page; // click button => wtich page
 
